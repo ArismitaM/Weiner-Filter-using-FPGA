@@ -10,8 +10,6 @@ The project also includes:
 - Image comparison metrics (MSE & PSNR)
 - Testbench to verify raw vs filtered output switching
 
-GitHub Repository: *(add your link here)*
-
 ---
 
 ## 🎯 Project Goals
@@ -75,10 +73,10 @@ A high PSNR (~50 dB) indicates the FPGA-filtered result is **very close to the e
 
 ### 2️⃣ Python Filter vs Python Original
 ```
-MSE  : 46.383
-PSNR : 31.467 dB
+MSE: 46.383
+PSNR: 31.467 dB
 ```
-This shows the Wiener filter reduces noise but still modifies the image—expected for a working denoiser.
+This shows the Wiener filter reduces noise but still modifies the image, as expected for a working denoiser.
 
 ### ✔ Interpretation
 - FPGA-generated image is *almost identical* to expected filtered output.
@@ -98,8 +96,7 @@ The testbench checks both filtered and raw modes.
 
 ---
 
-## 📊 Resource Utilization (from PPT)
-*(Summaries from slides — update exact % if needed)*
+## 📊 Resource Utilization
 - LUTs, FFs, BRAMs usage
 - Timing summary and slack
 - Power consumption report
@@ -138,10 +135,3 @@ This project successfully implements a full FPGA-based Wiener filtering pipeline
 - Add **5×5 Wiener filter**
 - Use **AXI streaming** + onboard DDR for video-rate processing
 - Improve accuracy with higher bit-width fixed-point representation
-
----
-
-## 👩‍💻 Author
-**Arismita M.**
-
-*(Add contact/GitHub profile link here)*
